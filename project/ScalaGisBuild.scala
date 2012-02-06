@@ -23,8 +23,9 @@ object Dependencies {
   val jFreeChart  = "org.jfree" % "jfreechart" % "1.0.14"
   val xmlGraphics = "org.apache.xmlgraphics" % "xmlgraphics-commons" % "1.4"
   val iText       = "com.lowagie" % "itext" % "2.1.5" intransitive()
+  val scalaARM    = "com.jsuereth" %% "scala-arm" % "1.2"
   val allDependencies = Seq(
-    jCommon, jFreeChart, xmlGraphics, iText
+    jCommon, jFreeChart, xmlGraphics, iText, scalaARM
   )
 }
 
