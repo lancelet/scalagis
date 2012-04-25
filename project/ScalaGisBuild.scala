@@ -3,7 +3,7 @@ import Keys._
 
 object BuildSettings {
   val buildOrganization = "com.github.scalagis"
-  val buildScalaVersion = "2.9.1"
+  val buildScalaVersion = "2.9.2"
   val buildVersion      = "0.1-SNAPSHOT"
   val buildSettings = Defaults.defaultSettings ++ Seq(
     organization := buildOrganization,
@@ -13,9 +13,10 @@ object BuildSettings {
 }
 
 object Resolvers {
-  val scalaToolsSnapshots = "Scala-Tools Snapshots" at
-    "http://scala-tools.org/repo-snapshots"
-  val allResolvers = Seq(scalaToolsSnapshots)
+  //val scalaToolsSnapshots = "Scala-Tools Snapshots" at
+  //  "http://scala-tools.org/repo-snapshots"
+  val sonatype = "Sonatype" at "https://oss.sonatype.org/content/groups/public"
+  val allResolvers = Seq(sonatype)
 }
 
 object Dependencies {
